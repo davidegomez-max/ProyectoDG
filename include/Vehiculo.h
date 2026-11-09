@@ -10,8 +10,7 @@ class Vehiculo{
     Vehiculo(string placa);
     virtual ~Vehiculo();
     virtual string getTipo();
-    void setPlaca();
     virtual string info()const;
-    virtual int cobrar() const;
+    virtual int cobrar() const = 0;
 };
-ostream &operator << (ostream &os, Vehiculo &vehiculo);
+ostream &operator << (ostream &os, const Vehiculo &vehiculo);
