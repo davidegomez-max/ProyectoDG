@@ -9,7 +9,7 @@ class Vehiculo{
     public:
     Vehiculo(string placa);
     virtual ~Vehiculo();
-    virtual string getTipo();
+    virtual string getTipo() const;
     virtual string info()const;
     virtual int cobrar() const = 0;
 };

@@ -9,4 +9,5 @@ class Carro : public Vehiculo{
     int getPasajeros() const;
     string info() const override;
     int cobrar() const override;
+    string getTipo() const override;
 };
