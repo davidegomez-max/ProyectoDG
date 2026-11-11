@@ -10,6 +10,6 @@ string Camiones::info() const {
 }
 
 int  Camiones::cobrar() const {
-    return ejes * 8100;
+    return ejes * (8000*DECIMA);
 }
 

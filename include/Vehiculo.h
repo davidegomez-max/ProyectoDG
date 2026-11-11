@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include "Variante.h"
 
 using namespace std;
 class Vehiculo{
