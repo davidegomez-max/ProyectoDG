@@ -1,5 +1,4 @@
 #include "Persona.h"
-
 Persona::Persona(string nombre, string documento) {
     this->nombre = nombre;
     this->documento = documento;

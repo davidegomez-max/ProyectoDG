@@ -7,8 +7,11 @@ int Moto:: getCilindraje(){
     return cilindraje;
 }
 string Moto:: info() const{
-    return info() + ", cilindraje:" to_string(cilindraje);
+    return Vehiculo::info() + ", cilindraje:" + to_string(cilindraje);
 }
 string Moto:: getTipo() const{
     return "Moto";
+}
+int Moto::cobrar() const{
+
 }

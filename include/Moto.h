@@ -1,5 +1,6 @@
 #pragma once
 #include "Vehiculo.h"
+#include "Variante.h"
 class Moto : public Vehiculo{
     private:
         int  cilindraje;

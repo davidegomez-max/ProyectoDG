@@ -18,3 +18,6 @@ string Carro::getTipo() const {
 string Carro::info() const {
     return Vehiculo::info() + ", pasajeros: " + to_string(pasajeros);
 }
+int Carro:: cobrar() const {
+    
+}
