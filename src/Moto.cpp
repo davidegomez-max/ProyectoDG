@@ -1,18 +1,19 @@
 #include "Moto.h"
-
+#include "Propietario.h"
 Moto::Moto(string placa, int cilindraje): Vehiculo(placa), cilindraje(cilindraje){
     if (cilindraje <= 0){
         throw DatosInvalidos("El cilindraje debe ser mayor que 0");
     }
 }
-int Moto:: getCilindraje(){
+int Moto:: getCilindraje() const{
     return cilindraje;
 }
 string Moto:: info() const{
-    return Vehiculo::info() + ", cilindraje:" + to_string(cilindraje);
+    string infoCompleta= Vehiculo::info() + ", cilindraje:" + to_string(cilindraje);
     if (cilindraje>= 400){
-        return "La moto es de alto cc";
+         infoCompleta += "La moto es de alto cc";
     }
+    return infoCompleta;
 }
 string Moto:: getTipo() const{
     return "Moto";

@@ -1,6 +1,7 @@
 #pragma once 
 #include "Carro.h"
 #include "Excepciones.h"
+#include "Propietario.h"
 Carro::Carro(string placa, int pasajeros): Vehiculo(placa), pasajeros (pasajeros) {
     if (pasajeros < 1) {
         throw DatosInvalidos("El número de pasajeros debe ser al menos 1");
