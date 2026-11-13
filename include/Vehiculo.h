@@ -3,6 +3,7 @@
 #include <string>
 #include "Variante.h"
 using namespace std;
+class Propietario;
 class Vehiculo{
     protected:
     string placa;
@@ -15,5 +16,5 @@ class Vehiculo{
     virtual int cobrar() const = 0;
     void setPropietario(Propietario* propietario);
 };
-class Propietario;
+
 ostream &operator << (ostream &os, const Vehiculo &vehiculo);
