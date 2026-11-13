@@ -1,5 +1,7 @@
 #pragma once 
 #include "Vehiculo.h"
+#include "Variante.h"
+#include "Propietario.h"
 class Carro : public Vehiculo{
     private:
     int pasajeros;

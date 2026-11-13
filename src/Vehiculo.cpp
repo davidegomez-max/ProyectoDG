@@ -15,6 +15,7 @@ Vehiculo::Vehiculo(string placa) {
         }
     }
     this->placa = placa;
+    this->propietario = nullptr;
 }
 Vehiculo::~Vehiculo() {}
 string Vehiculo::getTipo() const {
@@ -25,4 +26,7 @@ string Vehiculo::info()const{
 ostream& operator<<(ostream& os, const Vehiculo& vehiculo) {
     os << vehiculo.info();
     return os;
+}
+void Vehiculo::setPropietario(Propietario* propietario) {
+    this->propietario = propietario;
 }
