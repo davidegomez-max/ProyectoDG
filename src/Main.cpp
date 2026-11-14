@@ -116,7 +116,30 @@ int main() {
     cout << "Total de pasos en el peaje: "<< caseta->getTotalV() <<endl;
 
     //Caso 11
+    cout << endl << "Caso 11:" << endl;
+    try {
+        caseta->cerrarCaja(caseta->getTotalRecibido());
+        cout << "La caja cuadra con el recaudado." << endl;
+    }
+    catch (const DescuadredeCaja& e) {
+        cout << "Error: " << e.what() << endl;
+    }
 
 
+    //Caso 12
+    cout << endl<< "Caso 12:" << endl;
+    try {
+        caseta->cerrarCaja(caseta->getTotalRecibido() - 1000);
+    } 
+    catch (const DescuadredeCaja& e) {
+        cout << "Error: " << e.what() << endl;
+    }
 
+
+    //Caso 13
+    cout << endl << "Caso 13:"<< endl;
+    delete caseta;
+    for (int i=0;i<vehiculos.size(); i++) {
+        delete vehiculos[i];
+    }
 }   
