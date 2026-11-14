@@ -51,3 +51,14 @@ int Caseta::getCantidadB() const{
 int Caseta::getCantidadCamiones() const{
     return cantidadCamiones;
 }
+void Caseta::cerrarCaja (int efectivoCaja){
+    if (efectivoCaja != totalRecibido){
+        int diferencia = efectivoCaja - totalRecibido;
+        if (diferencia > 0){
+            throw DescuadredeCaja("Sobran " + to_string(diferencia) + " en la caja");
+        } else {
+            throw DescuadredeCaja("Faltan " + to_string(-diferencia) + " en la caja");
+        }
+        
+    }
+}

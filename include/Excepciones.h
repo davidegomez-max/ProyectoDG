@@ -17,3 +17,10 @@ public:
 DatosInvalidos (string msj);
 const char*what() const noexcept override;
 };
+class DescuadredeCaja : public exception{
+private:
+    string msj;
+public:
+DescuadredeCaja (string msj);
+const char*what() const noexcept override;
+};
