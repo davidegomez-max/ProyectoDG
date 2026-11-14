@@ -24,5 +24,4 @@ int getCantidadC() const;
 int getCantidadM() const;
 int getCantidadB() const;
 int getCantidadCamiones() const;
-void cerrarCaja(int efectivoCaja);
 };

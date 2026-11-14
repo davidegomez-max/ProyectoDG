@@ -59,6 +59,5 @@ void Caseta::cerrarCaja (int efectivoCaja){
         } else {
             throw DescuadredeCaja("Faltan " + to_string(-diferencia) + " en la caja");
         }
-        
     }
 }

@@ -1,4 +1,3 @@
-#pragma once 
 #include "Carro.h"
 #include "Excepciones.h"
 #include "Propietario.h"

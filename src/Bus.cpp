@@ -1,4 +1,3 @@
-#pragma once
 #include "Variante.h"
 #include "Bus.h"
  #include "Excepciones.h"
