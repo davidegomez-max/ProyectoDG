@@ -15,6 +15,7 @@ class Vehiculo{
     virtual string info()const;
     virtual int cobrar() const = 0;
     void setPropietario(Propietario* propietario);
+    string getPlaca() const;
 };
 
 ostream &operator << (ostream &os, const Vehiculo &vehiculo);

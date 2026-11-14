@@ -30,3 +30,6 @@ ostream& operator<<(ostream& os, const Vehiculo& vehiculo) {
 void Vehiculo::setPropietario(Propietario* propietario) {
     this->propietario = propietario;
 }
+string Vehiculo:: getPlaca() const{
+    return placa;
+}
