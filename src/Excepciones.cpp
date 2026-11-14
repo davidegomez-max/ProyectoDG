@@ -12,3 +12,9 @@ DatosInvalidos::DatosInvalidos(string msj) {
 const char* DatosInvalidos::what() const noexcept {
     return msj.c_str();
 }
+DescuadredeCaja::DescuadredeCaja(string msj){
+    this->msj=msj;
+}
+const char* DescuadredeCaja::what() const noexcept{
+    return msj.c_str();
+}
