@@ -27,7 +27,7 @@ void Caseta::registrarPaso(Vehiculo* vehiculo){
         cantidadC= cantidadC + 1;
     }else if (tipoV == "Moto"){
         cantidadM= cantidadM + 1;
-    } else if (tipoV == "Bicicleta"){
+    } else if (tipoV == "Bus"){// visual >:v
         cantidadB=cantidadB + 1;
     } else if (tipoV == "Camion"){
         cantidadCamiones=cantidadCamiones + 1;
