@@ -17,6 +17,9 @@ Caseta::~Caseta(){
     }
     cout << "Destruyendo caseta" << endl;}
 void Caseta::registrarPaso(Vehiculo* vehiculo){
+    if (vehiculo ==nullptr){
+        throw DatosInvalidos("No se puede registrar un vehiculo nulo");
+    }
     string tipoV = vehiculo->getTipo();
     int valorCobrado = vehiculo->cobrar();
     RegistroPaso* registro = new RegistroPaso(vehiculo->getPlaca(), tipoV, valorCobrado);
