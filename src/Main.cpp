@@ -23,7 +23,7 @@ int main() {
     Propietario* propietarioVecino= new Propietario("David","12576", true);
     personas.push_back(propietarioNoVecino);
     personas.push_back(propietarioVecino);  
-    
+    /*
     //caso1
     cout << endl << "Caso 1:" << endl;
     Carro* carro1 = new Carro("ABC123", 3);
@@ -142,4 +142,14 @@ int main() {
     for (int i=0;i<vehiculos.size(); i++) {
         delete vehiculos[i];
     }
+    */
+    //caso clase
+    Ambulancia* ambulancia1 = new Ambulancia("RES321", "A1", "");
+    cout << ambulancia1->getTipo()<< "-" << *ambulancia1 << endl;
+    cout << "Valor a pagar: " << ambulancia1->cobrar() << endl;
+    delete ambulancia1;
+
+    cout << "En emergencia" << endl;
+    setEnEmergencia(true);
+    cout << "Valor a pagar: " << ambulancia1->cobrar() << endl;
 }   
